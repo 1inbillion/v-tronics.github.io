@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/faviconicon.png">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>E-REPAIR by V-TRONICS</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a > <h3> <img src="assets/img/faviconicon.png" style= "width: 18px"> &nbsp; E-REPAIR by V-TRONICS </h3>
+                    </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">Home</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    
+
+                    <div class="home__data">
+                        <h3 class="home__title">
+                            Electronics Repair <br> Faster and Easier
+                        </h3>
+                        <p class="home__description">
+                             We know what you go through when your device or appliance breaks or stops working.<br><br>
+                            Book a service now and get a fast, safe and hassle-free doorstep experience with E-REPAIR.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Fill the form <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_1inbillion_/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </section>
+
+            
+            
+            
+            
+             <!-- reservation/ Book a shoot form ----> 
+            
+            <section class="contact section container" id="contact">
+        
+        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+            
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="mb-0" >Book a Service</h3>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body d-flex flex-column justify-content-center">
+                        <div class="booking">
+                            
+                            <form class="booking-form row" role="form" action="https://formspree.io/f/mgedbqew" method="post" />
+                            
+                            
+                            
+                                <div class="col-lg-6 col-12">
+                                    <label for="name" class="form-label">Full Name </label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="email" class="form-label">Email Address</label>
+
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="phone" class="form-label">Phone Number</label>
+
+                                    <input type="telephone" name="phone" id="phone" class="form-control" placeholder="1234567890" required>
+                                </div>
+                            
+                            
+                            
+                            <div class="col-lg-6 col-12">
+                                    <label for="name" class="form-label">Address </label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="D.no, street, city" required>
+                                
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Postal / Zip code" required>
+                                
+                                </div>
+                                
+                                <div class="col-lg-8 col-12">
+                                    <label for="date" class="form-label">Service Appointment Date</label>
+
+                                    <input type="date" name="date" id="date" value="" class="form-control">
+                                </div>
+                            
+                             <div class="col-lg-8 col-12">
+                                    <label for="time" class="form-label">Service Appointment Time</label>
+
+                                    <input type="time" name="time" id="time" value="" class="form-control">
+                                </div>
+                                
+                                <div class="col-lg-6 col-12">
+                                    <label for="people" class="form-label">Request for</label>
+                                    
+                                    <select class="form-select form-control" name="Type of event" id=""> 
+                                      <option value="Select Event" selected>Select</option>
+                                        
+                                      <option value="Tv service">Tv Services (installation / service / uninstallation)</option>
+                                        
+                                      <option value="DTH Services">DTH Services</option>
+                                        
+                                      <option value="Mobile Phone Repair">Mobile Phone Repair</option>
+                                        
+                                      <option value="Laptops & Computer Service">Laptops &amp; Computer Service</option>
+                                        
+                                      <option value="Audio &amp; Stereo Systems">Audio &amp; Stereo Systems</option>
+                                        
+                                      <option value="Other Home Appliances">Other Home Appliances</option>
+                                        
+                                    </select>
+                            </div>
+                                    
+                                    <div class="col-lg-6 col-12">
+                                    <label for="text" class="form-label">Tell Us Something About The Issue  </label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder=" Type Here" required>
+                                </div>
+                                    
+                                     
+
+                                <div class="col-lg-6 col-12 ms-auto">
+                                    <button type="submit" class="form-control" > Submit Request </button>
+                                   
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer"></div>
+                    
+                </div>
+                
+            </div>
+        </div>
+            </section>
+    <!---------Book a shoot form end ------------>   
+            
+            
+            
+             <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> 
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +91 8019356863
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    vagdevitronics@gmail.com
+                                </span>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+            </main>
+            
+            
+            
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+                    <ul class="footer__data">
+                        <li class="footer__information">VAGDEVI TRONICS</li>
+                        <li class="footer__information"> NH216A, Peravali Junction, OPP to Saibaba temple, <br>Peravali, W.G.Dist, AP - 534328.</li>
+                        <li class="footer__information"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">E-REPAIR by V-TRONICS. <br> 2022 &#124; All rigths reserved</p>
+            
+            
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
